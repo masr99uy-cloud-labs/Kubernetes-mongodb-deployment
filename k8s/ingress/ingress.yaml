@@ -1,0 +1,18 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: my-app-ingress
+  namespace: mongo-app
+spec:
+  ingressClassName: nginx        # the NGINX controller enabled with: minikube addons enable ingress
+  rules:
+    - host: my-app.local         # add "127.0.0.1 my-app.local" to your hosts file
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: my-app
+                port:
+                  number: 3000

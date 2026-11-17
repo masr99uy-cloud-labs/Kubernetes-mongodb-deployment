@@ -1,0 +1,7 @@
+# Never commit real secrets, dumps or local files
+.env
+*.secret.yaml
+secret.yaml
+*.archive
+*.dump
+GUIA_PASO_A_PASO.md
