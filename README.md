@@ -6,7 +6,7 @@ My Node.js + MongoDB application, previously run with Docker Compose ([Lab-Docke
 
 ## Architecture
 
-![Architecture diagram](docs/k8s-architecture)
+![Architecture diagram](docs/k8s-architecture.png)
 
 ```mermaid
 flowchart LR
